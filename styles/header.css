@@ -1,0 +1,232 @@
+/* -------------------- FONTS -------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Catamaran:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* -------------------- ROOT VARIABLES -------------------- */
+:root {
+  --color-primary-1: #1941b7;
+  --color-primary-2: #930f1d;
+  --color-primary-3: #b91d2d;
+  --color-primary-4: #e9f2ff;
+  --color-primary-5: #ffdfe3;
+  --color-primary-6: #3656b6;
+
+  --color-neutral-0: #FAFAFA;
+  --color-neutral-1: #d1cece;
+  --color-neutral-2: #111111;
+  --color-neutral-3: #2b2a2a;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  background-color: var(--color-primary-1);
+  height: 60px;
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+  max-height: 30px;
+  margin-left: 30%;
+  object-fit: contain;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  color: var(--color-primary-4);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+}
+
+/* -------------------- NAV LINKS -------------------- */
+.nav-link {
+  position: relative;
+  color: var(--color-neutral-1);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active {
+  color: var(--color-neutral-0) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-neutral-0);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: var(--color-neutral-0);
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+.offcanvas-body .nav-link::before {
+  background-color: var(--color-neutral-3);
+}
+
+.offcanvas-body .nav-link,
+.offcanvas-body .dropdown-item {
+  color: var(--color-neutral-2) !important; 
+}
+
+@media (min-width: 989px) {
+  .nav-link::before {
+    display: none !important;
+  }
+}
+
+/* -------------------- NAV ITEMS -------------------- */
+.nav-item {
+  font-size: 14px;
+  font-weight: 480;
+ 
+}
+
+/* -------------------- DROPDOWN -------------------- */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* -------------------- BUTTONS -------------------- */
+.btn-default-1 {
+  background-color: transparent;
+  color: var(--color-neutral-0);
+  border-radius: 5px;
+  padding: 2px 15px;
+  margin: 0px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid var(--color-neutral-0);
+  cursor: pointer;
+}
+
+.btn-default-1:hover {
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-1);
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-default-2 {
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-0);
+  border-radius: 5px;
+  padding: 3px 13px;
+  margin: 0px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-default-2:hover {
+  background-color: var(--color-primary-3);
+  transition: all 0.25s ease-in-out;
+}
+
+.ui-tools {
+  display: flex; 
+  gap: 10px; 
+  padding-right: 1%;
+}
+
+.ui-tools img {
+  height: 10px;
+  width: auto;
+  display: block;
+
+}
+
+.ui-tools button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent; 
+  padding: 5px;
+  border-radius: 100%; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ui-tools button:hover {
+  background-color: var(--color-primary-6); 
+}
+
+.darkmode-toggle img {
+  height: 15px; 
+  filter: brightness(0) invert(1);
+}
+
+/* -------------------- DARK MODE CONFIG -------------------- */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+
+body.dark-mode .dropdown-menu {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .offcanvas {
+  background-color: #1f1f1f;
+  color: var();
+}
+
+
+
+  /* -------------------- MEDIA QUERY -------------------- */
+@media (max-width: 634px) {
+  .navbar-brand img {
+    margin-left: 0;
+    margin-right: auto;
+    height: 100%;
+    width: auto;
+    max-height: 25px;
+    margin-left: 3%;
+  }
+
+  .ui-tools {
+    padding-right: 12;
+    gap: 2px;
+
+  }
+
+  .sign-in-out button{
+    padding: 2px 10px;
+    margin: 0px 10px;
+    font-size: 12px;
+  }
+}
