@@ -13,11 +13,27 @@
   --color-neutral-3: #2b2a2a;
 }
 
-/* -------------------- FOOTER -------------------- */
+
+/* -------------------- GLOBAL SETTINGS -------------------- */
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
+  flex-direction: column;
 }
+
+
+/* -------------------- FOOTER -------------------- */
 
 footer{
   position: relative;

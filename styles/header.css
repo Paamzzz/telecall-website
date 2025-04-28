@@ -18,6 +18,7 @@
   background-color: var(--color-primary-1);
   height: 60px;
   padding: 0;
+  position: fixed;
 }
 
 .navbar-brand img {
@@ -26,6 +27,7 @@
   max-height: 30px;
   margin-left: 30%;
   object-fit: contain;
+  z-index: 999;
 }
 
 .navbar-toggler {
@@ -115,7 +117,7 @@
 
 .btn-default-1:hover {
   background-color: var(--color-neutral-0);
-  color: var(--color-neutral-1);
+  color: var(--color-neutral-3);
   transition: all 0.25s ease-in-out;
 }
 
