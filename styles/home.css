@@ -18,7 +18,7 @@
   /* -------------------- IMPORT -------------------- */
   @font-face {
     font-family: 'Cabin';
-    src: url('../font/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('../assets/fonts/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: 100 900; 
     font-style: normal;
     font-display: swap;
@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: 'LibreFranklin';
-    src: url('../font/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
