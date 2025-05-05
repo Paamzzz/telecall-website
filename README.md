@@ -2,10 +2,10 @@
 
 
 ## 📋 Atualizações
-### Versão 1.1.2
-- Header 90% feito (com bug de scrollagem e nos nav-links)
-- Seção "home" 80%, precisando alguns ajustes na imagem e responsividade
-- Footer centralizado (???)
+### Versão 1.1.3
+- Header e footer corrigido
+- Seção "home" 80% bom um bug em uns dos botões
+- Responsavidade em 50%
 <br> <br>
 
 ## 📖 Descrição
