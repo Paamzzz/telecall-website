@@ -2,7 +2,7 @@
 
 
 ## 📋 Atualizações
-### Versão 2.1.2
+### Versão 2.0.2
 - Header finalizado
 - Footer finalizado
 - Hero finalizado
