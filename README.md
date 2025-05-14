@@ -2,10 +2,11 @@
 
 
 ## 📋 Atualizações
-### Versão 1.1.2
-- Header 90% feito (com bug de scrollagem e nos nav-links)
-- Seção "home" 80%, precisando alguns ajustes na imagem e responsividade
-- Footer centralizado (???)
+### Versão 2.1.2
+- Header finalizado
+- Footer finalizado
+- Hero finalizado
+- Iniciando seção Empresas
 <br> <br>
 
 ## 📖 Descrição
