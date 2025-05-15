@@ -2,12 +2,10 @@
 
 
 ## 📋 Atualizações
-### Versão 2.0.2
-- Header finalizado
-- Footer finalizado
-- Hero finalizado
-- Iniciando seção Empresas
-<br> <br>
+### Versão 2.1.2
+- Seção "Carrousel" feita, apenas faltando responsividade
+- Falta apenas quatro seções para finalizar a página!!!
+<br> <br>``
 
 ## 📖 Descrição
   Este projeto é parte do 1º semestre da faculdade e tem como objetivo refazer o site da Telecall, focando nos serviços de CPaaS (Plataforma de Comunicação como Serviço) e seus benefícios. A principal proposta é melhorar a estética do site original, utilizando um design novo feito no Figma. O site foi desenvolvido com Bootstrap, garantindo uma estrutura responsiva e funcional. 
