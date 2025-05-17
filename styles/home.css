@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 90vh;
   display: flex;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .hero-container {
@@ -145,6 +145,7 @@ body {
   width: 100%;
   height: 15vh;
   display: flex;
+  margin-top: 30px;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
@@ -165,10 +166,17 @@ body {
   margin: 0 20px;
 }
 
-.logo-slide {
-  animation: 20s slide infinite linear;
-  display: inline-block;
+.logo-track {
+  display: flex;
+  animation: slide 12s linear infinite;
+  width: fit-content;
+  min-width: 200%; /* Garante espaço para as duas logo-slide lado a lado */
 }
+
+.logo-slide {
+  display: flex;
+}
+
 
 .logo-circle {
   height: 40px;
@@ -186,9 +194,59 @@ body {
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
+
+
+/* -------------------- CPAAS SECTION -------------------- */
+#cpaas {
+  width: 85%;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+} 
+
+#cpaas .container {
+  background-color: #E9F2FF;
+  padding-top: 100px;
+  border-radius: 4vh;
+}
+
+#cpaas .container img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+#cpaas h2 {
+  font-family: "LibreFranklin", sans-serif;
+  font-variation-settings: "wght" 500;
+  text-align: center;
+  font-size: clamp(36px, 4vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+#cpaas h3 {
+  font-family: "Cabin", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: clamp(22px, 2vw, 26px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#cpaas p {
+  font-variation-settings: "wght" 400;
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.6;
+  margin-bottom: 70px;
+  padding-right: 50px;
+
+}
+
 
 /* -------------------- MEDIA QUERY -------------------- */
 
@@ -200,11 +258,36 @@ body {
     margin-top: -5px;
     object-fit: contain;
   }
+
+  #hero {
+    padding-top: 100px;
+  }
+
   #hero h1,
   #hero span,
   #hero p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+
+/* ======= CPaaS ======= */
+@media screen and (max-width: 768px) {
+  #cpaas {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #cpaas .container img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+  }
+
+  #cpaas p {
+    margin-bottom: 50px;
+    padding-right: 20px;
   }
 }
