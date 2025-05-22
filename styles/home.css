@@ -244,6 +244,44 @@ body {
   object-fit: contain;
 }
 
+
+/* -------------------- SOLUÇÕES SECTION -------------------- */
+
+#solucoes .title {
+ font-family: "LibreFranklin", sans-serif;
+  font-variation-settings: "wght" 700;
+  font-size: clamp (20px, 10vh, 30px);
+}
+
+#solucoes .card-text
+
+
+#solucoes .card {
+  width: 500px;
+  height: auto;
+  border: 0.5px solid var(--color-primary-1);
+  border-radius: 3vh;
+  display: grid;
+}
+
+#solucoes img {
+  width: 70px;
+  height: auto;
+  display: flex; 
+  font-weight: 600;
+  font-size: clamp (15px, 1.5vw, 18px);
+}
+
+#solucoes p {
+  color: var(--color-neutral-3);
+  font-size: 1.9vh;
+  padding-right: 55px;
+}
+
+
+
+
+
 /* -------------------- MEDIA QUERY -------------------- */
 
 /* ======= Hero ======= */
