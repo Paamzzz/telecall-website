@@ -45,6 +45,7 @@
 }
 
 body {
+  background-color: var(--color-neutral-0);
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -140,13 +141,11 @@ body {
 }
 
 /* -------------------- CARROUSEL SECTION -------------------- */
-
 #carrousel {
   width: 100%;
-  height: 15vh;
+  min-height: 20vh;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -154,6 +153,8 @@ body {
 
 .empresas {
   white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .empresas h2 {
@@ -162,21 +163,15 @@ body {
   padding: 15px;
 }
 
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: slide 16s linear infinite;
+}
+
 .empresas img {
   margin: 0 20px;
 }
-
-.logo-track {
-  display: flex;
-  animation: slide 12s linear infinite;
-  width: fit-content;
-  min-width: 200%; /* Garante espaço para as duas logo-slide lado a lado */
-}
-
-.logo-slide {
-  display: flex;
-}
-
 
 .logo-circle {
   height: 40px;
@@ -199,6 +194,7 @@ body {
 }
 
 
+
 /* -------------------- CPAAS SECTION -------------------- */
 #cpaas {
   width: 85%;
@@ -215,11 +211,6 @@ body {
   border-radius: 4vh;
 }
 
-#cpaas .container img {
-  width: 100%;
-  height: 500px;
-  object-fit: contain;
-}
 
 #cpaas h2 {
   font-family: "LibreFranklin", sans-serif;
@@ -244,9 +235,14 @@ body {
   line-height: 1.6;
   margin-bottom: 70px;
   padding-right: 50px;
-
+  
 }
 
+#cpaas .container img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
 
 /* -------------------- MEDIA QUERY -------------------- */
 
@@ -272,6 +268,12 @@ body {
   }
 }
 
+/* ======= Carrousel ======= */
+@media screen and (max-width: 768px) {
+  #carrousel {
+    padding-top: 80px;
+  }
+}
 
 /* ======= CPaaS ======= */
 @media screen and (max-width: 768px) {

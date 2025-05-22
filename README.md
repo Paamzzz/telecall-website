@@ -30,6 +30,18 @@
 - Figma
  <br> <br>
 
+## 📝 License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for more information.
+ <br> <br>
+
+## 👩‍💻 Author
+
+**Pamela Amancio Goulart**  
+Full-Stack Developer & Design Student  
+📧 pamamanciogoulart@gmail.com  
+🌐 [GitHub](https://github.com/Paamzzz) 
 
 
 
