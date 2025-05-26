@@ -197,7 +197,7 @@
 
   /* -------------------- MEDIA QUERY -------------------- */
 
-   /* Off canvas, white mode */
+  
    @media (max-width: 1291px) {
 
    .navbar-nav{
@@ -209,11 +209,14 @@
   @media (max-width: 1291px) {
     .btn-default-2,
     .btn-default-1 {
-      margin-left: 0;
-      margin-right: 0;
       padding: 6px 10px;
       font-size: 12px;
     }
+
+    .btn-default-1 {
+      margin-left: 20px;
+    }
+   
   }
 
 @media (max-width: 991px) {
@@ -285,3 +288,44 @@
     font-size: 12px;
   }
 }
+
+@media (min-width: 603px) {
+  .mobile-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 602px) {
+  .desktop-buttons {
+    display: none;
+  }
+  .mobile-buttons {
+    display: block
+  }
+
+  .btn-default-2 {
+    display: flex;
+    margin-left: 0;
+    padding: 6px 25px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .btn-default-1 {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 6px 40px;
+    width: fit-content;
+    text-align: center;
+    color: var(--color-neutral-3);
+    border: 1px solid var(--color-neutral-3);
+  }
+
+  .btn-default-1:hover {
+    background-color: var(--color-neutral-3);
+    color: var(--color-neutral-0);
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+

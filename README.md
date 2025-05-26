@@ -2,10 +2,11 @@
 
 
 ## 📋 Atualizações
-### Versão 2.2.3
-- Seção "Sobre" feita e com resposividade
-- Ajustes no header e em seu css
-- "Carrousel" com bugs bobos principalmente na responsividade
+### Versão 2.3.4
+- Responsividade do header e hero 100% corrigidos
+- Carroussel com bug no height e cortagem de imagens resolvido
+- Ancoras funcionais e links abrindo novas abas
+- Base de "Soluções" em 60% feitas.
 <br> <br>
 
 ## 📖 Descrição
