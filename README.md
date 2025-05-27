@@ -2,11 +2,8 @@
 
 
 ## 📋 Atualizações
-### Versão 2.3.4
-- Responsividade do header e hero 100% corrigidos
-- Carroussel com bug no height e cortagem de imagens resolvido
-- Ancoras funcionais e links abrindo novas abas
-- Base de "Soluções" em 60% feitas.
+### Versão 2.4.4
+- Seção "Soluções" 100% finalizado
 <br> <br>
 
 ## 📖 Descrição
