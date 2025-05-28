@@ -2,8 +2,8 @@
 
 
 ## 📋 Atualizações
-### Versão 2.4.4
-- Seção "Soluções" 100% finalizado
+### Versão 2.5.4
+- Seção "Planos" 100% finalizado
 <br> <br>
 
 ## 📖 Descrição
