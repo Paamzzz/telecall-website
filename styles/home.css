@@ -360,7 +360,7 @@ body {
 
 /* -------------------- PLANOS-------------------- */
 #planos {
-  max-width: 1300px;
+  max-width: 1600px;
   display: flex;
   padding-top: 120px;
   padding-bottom: 100px;
@@ -369,12 +369,11 @@ body {
 }
 
 #planos .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin-right: 20px;
   margin-left: 20px;
   width: auto;
   padding: 60px 30px 30px 60px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,6 +440,124 @@ body {
   color: var(--color-neutral-0);
 }
 
+
+
+/* -------------------- SUPORTE -------------------- */
+
+#suporte {
+  max-width: 1300px;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#suporte .container {
+  max-width: 1200px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: auto;
+}
+
+#suporte .col-12 {
+  gap: 20px;
+}
+
+#suporte h2 {
+  font-family: "LibreFranklin", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: clamp(36px, 4vw, 46px);
+  margin-bottom: 20px;
+  display: block;
+}
+
+#suporte h3 {
+  font-variation-settings: "wght" 500;
+  font-size: clamp(22px, 2vw, 26px);
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: var(--color-primary-1);
+}
+
+#suporte #title-contato {
+  margin-bottom: 35px
+}
+
+#suporte label {
+  font-size: clamp(15px, 2vw, 17px);
+  color: var(--color-neutral-3);
+  padding-top: 20px;
+}
+
+#suporte input {
+  width: 100%;
+  display: flex;
+  padding: 7px;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+#suporte #fmensagem {
+  height: 150px;
+}
+
+#suporte button {
+  padding: 7px 50px;
+  border-radius: 7px;
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-0);
+  border: none;
+  font-size: clamp(14px, 2vw, 16px);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  margin: 20px auto
+}
+
+#suporte button:hover {
+  background-color: var(--color-primary-3);
+}
+
+#suporte p {
+  font-size: clamp(14px, 2vw, 16px);
+  color: var(--color-neutral-4);
+  margin-top: 20px;
+}
+
+#suporte .info-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#suporte .info-icon {
+  padding: 2px 2px;
+  background-color: var(--color-primary-3);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+
+#suporte span{
+  color: var(--color-neutral-4);
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+#suporte .location-info h3 {
+  margin-bottom: 10px;
+}
+
+#suporte h4 {
+  font-size: clamp(18px, 2vw, 22px);
+  margin-left: 20px;
+}
+
+#suporte .location-info p {
+  font-size: clamp(14px, 2vw, 16px);
+  color: var(--color-neutral-4);
+  margin-left: 30px;
+}
 
 /* -------------------- MEDIA QUERY -------------------- */
 

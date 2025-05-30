@@ -3,7 +3,8 @@
 
 ## 📋 Atualizações
 ### Versão 2.5.4
-- Seção "Planos" 100% finalizado
+- Seção "Suporte" 100% finalizada
+- HTML e CSS acabados!
 <br> <br>
 
 ## 📖 Descrição
