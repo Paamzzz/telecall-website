@@ -2,9 +2,10 @@
 
 
 ## 📋 Atualizações
-### Versão 2.5.4
-- Seção "Suporte" 100% finalizada
-- HTML e CSS acabados!
+### Versão 2.6.5
+- ScrollReveal feito
+-Ajustes no carrousel
+- Ajustes na seção "planos"
 <br> <br>
 
 ## 📖 Descrição
