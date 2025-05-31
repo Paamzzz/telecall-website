@@ -2,9 +2,8 @@
 
 
 ## 📋 Atualizações
-### Versão 3.7.6
-- Increase e Decrease font funcionais!
-- Tem alguns bugs na responsividade
+### Versão 3.7.7
+- Bugs corrigidos na responsividade
 <br> <br>
 
 ## 📖 Descrição

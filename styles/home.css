@@ -105,6 +105,7 @@ body.font-large {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -256,7 +257,6 @@ body {
 }
 
 .logo-track {
-  min-width: 2000px; 
   min-height: 40px;
   display: flex;
   width: max-content;
