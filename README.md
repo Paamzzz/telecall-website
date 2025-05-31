@@ -3,8 +3,8 @@
 
 ## 📋 Atualizações
 ### Versão 3.7.6
-- Footer não é mais afetado pelo modo escuro
-- add "title" em botões desativados
+- Increase e Decrease font funcionais!
+- Tem alguns bugs na responsividade
 <br> <br>
 
 ## 📖 Descrição

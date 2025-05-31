@@ -17,6 +17,13 @@
   --color-neutral-4: #504f4f;
   --color-neutral-5: #6c6c6c;
 
+
+  --fs-xs: clamp(13px, 1.5vw, 15px);
+  --fs-sm: clamp(14px, 1.6vw, 16px);
+  --fs-md: clamp(16px, 1.8vw, 18px);
+  --fs-lg: clamp(22px, 2.5vw, 26px);
+  --fs-xl: clamp(36px, 4vw, 46px);
+  --fs-xxl: clamp(40px, 5vw, 52px);
 }
 
 .darkmode {
@@ -37,6 +44,34 @@
   --color-neutral-4: #504f4f;
   --color-neutral-5: #6c6c6c;
 }
+
+body.font-small {
+  --fs-xs: clamp(12px, 1.3vw, 13.5px);
+  --fs-sm: clamp(13px, 1.4vw, 14.5px);
+  --fs-md: clamp(14.5px, 1.6vw, 16px);
+  --fs-lg: clamp(20px, 2.2vw, 23.5px);
+  --fs-xl: clamp(32px, 3.6vw, 41px);
+  --fs-xxl: clamp(36px, 4.5vw, 47px);
+}
+
+body.font-normal {
+  --fs-xs: clamp(13px, 1.5vw, 15px);
+  --fs-sm: clamp(14px, 1.6vw, 16px);
+  --fs-md: clamp(16px, 1.8vw, 18px);
+  --fs-lg: clamp(22px, 2.5vw, 26px);
+  --fs-xl: clamp(36px, 4vw, 46px);
+  --fs-xxl: clamp(40px, 5vw, 52px);
+}
+
+body.font-large {
+  --fs-xs: clamp(14px, 1.7vw, 16.5px);
+  --fs-sm: clamp(15.5px, 1.8vw, 18px);
+  --fs-md: clamp(18px, 2vw, 20.5px);
+  --fs-lg: clamp(24.5px, 2.8vw, 29.5px);
+  --fs-xl: clamp(40px, 4.5vw, 52px);
+  --fs-xxl: clamp(44px, 5.5vw, 60px);
+}
+
 
 /* -------------------- IMPORT -------------------- */
 @font-face {
@@ -101,14 +136,14 @@ body {
 }
 
 #hero span {
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: var(--fs-xs);
   color: var(--color-neutral-5);
 }
 
 #hero h1 {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 700;
-  font-size: clamp(36px, 4vw, 46px);
+  font-size: var(--fs-xxl);
   padding-top: 5px;
   word-break: break-word;
   max-width: 90%;
@@ -117,7 +152,7 @@ body {
 }
 
 #hero p {
-  font-size: clamp(14px, 1.4vw, 18px);
+  font-size: var(--fs-sm);
   color: var(--color-neutral-3);
   padding-top: 10px;
   max-width: 600px;
@@ -135,7 +170,7 @@ body {
   color: #fafafa;
   border: none;
   font-family: "Cabin", sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-xs);
   margin: 40px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -152,7 +187,7 @@ body {
   color: var(--color-neutral-2);
   border: 1px solid var(--color-neutral-2);
   font-family: "Cabin", sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-xs);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -209,7 +244,7 @@ body {
 }
 
 .empresas h2 {
-  font-size: clamp(18px, 1.7vw, 20px);
+  font-size: var(--fs-md);
   color: var(--color-neutral-5);
   padding: 15px;
 }
@@ -278,7 +313,7 @@ body {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 500;
   text-align: center;
-  font-size: clamp(36px, 4vw, 46px);
+  font-size: var(--fs-xl);
   line-height: 1.2;
   margin-bottom: 40px;
   color: var(--color-neutral-2)
@@ -287,7 +322,7 @@ body {
 #cpaas h3 {
   font-family: "Cabin", sans-serif;
   font-variation-settings: "wght" 600;
-  font-size: clamp(22px, 2vw, 26px);
+  font-size: var(--fs-lg);
   line-height: 1.2;
   margin-bottom: 20px;
   color: var(--color-neutral-2)
@@ -295,7 +330,7 @@ body {
 
 #cpaas p {
   font-variation-settings: "wght" 400;
-  font-size: clamp(14px, 1.5vw, 17px);
+  font-size: var(--fs-sm);
   line-height: 1.6;
   margin-bottom: 70px;
   padding-right: 50px;
@@ -323,7 +358,7 @@ body {
 #solucoes .title {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
-  font-size: clamp(36px, 4vw, 46px);
+  font-size: var(--fs-xl);
   color: var(--color-neutral-2)
 }
 
@@ -331,7 +366,7 @@ body {
 #solucoes .text {
   text-align: center;
   color: var(--color-neutral-3);
-  font-size: clamp(16px, 2.5vw, 19px);
+  font-size: var(--fs-sm);
   font-variation-settings: "wght" 400;
 }
 
@@ -368,7 +403,7 @@ body {
 
 .icon-title h5 {
   font-family: "Cabin", sans-serif;
-  font-size: 23px;
+  font-size: var(--fs-lg);
   font-variation-settings: "wght" 500;
   color: var(--color-neutral-2);
 }
@@ -386,7 +421,7 @@ body {
 
 #solucoes p {
   color: var(--color-neutral-3);
-  font-size: 15px;
+  font-size: var(--fs-sm);
   padding-left: 30px;
   font-variation-settings: "wght" 400;
 }
@@ -396,6 +431,7 @@ body {
   color: var(--color-primary-2);
   text-decoration: none;
   transition: all 0.3s ease;
+  font-size: var(--fs-sm);
 }
 
 #solucoes .solutions-link a:hover {
@@ -436,7 +472,7 @@ body {
 #planos h3 {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
-  font-size: clamp(23px, 5vw, 28px);
+  font-size: var(--fs-lg);
   color: #fafafa;
   text-align: center;
   padding-bottom: 5px;
@@ -444,7 +480,7 @@ body {
 
 #planos p {
   font-family: "Cabin", sans-serif;;
-  font-size: clamp(13px, 2.5vw, 16px);
+  font-size: var(--fs-sm);
   max-width: 700px;
   color: #fafafa;
   text-align: center;
@@ -463,7 +499,7 @@ body {
   color: #fafafa;
   border: none;
   font-family: "Cabin", sans-serif;
-  font-size: clamp(14px, 2.5vw, 16px);
+  font-size: var(--fs-sm);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -479,7 +515,7 @@ body {
   color: var(--color-primary-2);
   border: none;
   font-family: "Cabin", sans-serif;
-  font-size: clamp(14px, 2.5vw, 16px);
+  font-size: var(--fs-sm);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -513,17 +549,10 @@ body {
   gap: 20px;
 }
 
-/* --color-neutral-0: #fafafa;
---color-neutral-1: #d1cece;
---color-neutral-2: #111111;
---color-neutral-3: #2b2a2a;
---color-neutral-4: #504f4f;
---color-neutral-5: #6c6c6c; */
-
 #suporte h2 {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
-  font-size: clamp(36px, 4vw, 46px);
+  font-size: var(--fs-xl);
   margin-bottom: 20px;
   display: block;
   color: var(--color-neutral-2);
@@ -531,7 +560,7 @@ body {
 
 #suporte h3 {
   font-variation-settings: "wght" 500;
-  font-size: clamp(22px, 2vw, 26px);
+  font-size: var(--fs-lg);
   margin-top: 25px;
   margin-bottom: 20px;
   color: var(--color-primary-1);
@@ -542,7 +571,7 @@ body {
 }
 
 #suporte label {
-  font-size: clamp(15px, 2vw, 17px);
+  font-size: var(--fs-sm);
   color: var(--color-neutral-);
   padding-top: 20px;
   color: var(--color-neutral-3);
@@ -552,7 +581,9 @@ body {
   width: 100%;
   display: flex;
   padding: 7px;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: var(--fs-sm);
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-1);
 }
 
 #suporte #fmensagem {
@@ -565,7 +596,7 @@ body {
   background-color: var(--color-primary-2);
   color: #fafafa;
   border: none;
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: var(--fs-sm);
   text-decoration: none;
   transition: all 0.3s ease;
   display: flex;
@@ -577,7 +608,7 @@ body {
 }
 
 #suporte p {
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: var(--fs-sm);
   color: var(--color-neutral-3);
   margin-top: 20px;
 }
@@ -599,21 +630,22 @@ body {
 
 #suporte span{
   color: var(--color-neutral-3);
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: var(--fs-sm);
 }
 
 #suporte .location-info h3 {
   margin-bottom: 10px;
+  font-size: var(--fs-lg);
 }
 
 #suporte h4 {
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: var(--fs-md);
   margin-left: 20px;
   color: var(--color-neutral-2);
 }
 
 #suporte .location-info p {
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: var(--fs-sm);
   color: var(--color-neutral-3);
   margin-left: 30px;
 }
