@@ -2,10 +2,9 @@
 
 
 ## 📋 Atualizações
-### Versão 2.6.5
-- ScrollReveal feito
--Ajustes no carrousel
-- Ajustes na seção "planos"
+### Versão 3.6.5
+- Darkmode feito
+- Correções no readme
 <br> <br>
 
 ## 📖 Descrição
@@ -15,11 +14,9 @@
 ## 🚀 Funcionalidades
 
 - Página inicial e subpáginas de soluções com rolagem para apresentar os serviços oferecidos pela Telecall.
-- Tela de login e cadastro, com validação de usuário.
 - Tela pós-login com cache para salvar o nome do usuário e o estado de login.
 - Modo escuro para uma melhor experiência visual.
 - Botões para aumentar e diminuir o tamanho da fonte, proporcionando acessibilidade ao usuário.
-- Dark mode em todas as páginas
  <br> <br>
  
 ## 🛠️ Ferramentas e tecnologias usadas

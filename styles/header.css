@@ -8,7 +8,7 @@
   --color-primary-6: #3656b6;
 
   --color-neutral-0: #FAFAFA;
-  --color-neutral-1: #d1cece;
+  --color-neutral-1: #ded9d9;
   --color-neutral-2: #141414;
   --color-neutral-3: #080808;
   --color-neutral-4: #494949;
@@ -40,6 +40,18 @@
   z-index: 999;
 }
 
+.offcanvas {
+  background-color: var(--color-neutral-0);
+}
+
+.offcanvas-title {
+  color: var(--color-neutral-2);
+}
+
+.darkmode .btn-close {
+ filter: brightness(1) invert(1);
+}
+
 .navbar-brand img {
   height: 100%;
   width: auto;
@@ -64,10 +76,12 @@
   box-shadow: none;
 }
 
+
+
 /* -------------------- NAV LINKS -------------------- */
 .nav-link {
   position: relative;
-  color: var(--color-neutral-1);
+  color: #d1cece;
   transition: color 0.3s ease-in-out;
   font-size: 14px;
   font-weight: 480;
@@ -75,18 +89,17 @@
   max-width: 3000px;
 
 }
-
 .nav-link.active {
-  color: var(--color-neutral-0) !important;
+  color: #fafafa !important;
 }
 
 .nav-link:focus {
-  color: var(--color-neutral-0) !important;
+  color: #fafafa!important;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-neutral-0);
+  color: #fafafa;
 }
 
 .nav-link::before {
@@ -97,7 +110,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background-color: var(--color-neutral-0);
+  background-color: #fafafa;
   visibility: hidden;
   transition: 0.2s ease-in-out;
   border-radius: 10px;
@@ -120,10 +133,20 @@
   font-weight: 400;
 }
 
+.dropdown-menu {
+  background-color: var(--color-neutral-0);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: var(--color-neutral-3);
+  padding: 8px 16px;
+}
 /* -------------------- BUTTONS -------------------- */
 .btn-default-1 {
   background-color: transparent;
-  color: var(--color-neutral-0);
+  color: #fafafa;
   border-radius: 5px;
   padding: 6px 22px;
   margin-left: 30px;
@@ -131,19 +154,19 @@
   margin-right: 30px;
   font-size: 14px;
   font-weight: 400;
-  border: 1px solid var(--color-neutral-0);
+  border: 1px solid #fafafa;
   cursor: pointer;
 }
 
 .btn-default-1:hover {
-  background-color: var(--color-neutral-0);
+  background-color: #fafafa;
   color: var(--color-neutral-3);
   transition: all 0.25s ease-in-out;
 }
 
-.btn-default-2 {
+ .btn-default-2 {
   background-color: var(--color-primary-2);
-  color: var(--color-neutral-0);
+  color: #fafafa;
   border-radius: 5px;
   margin-left: 30px;
   padding: 6px 28px;
@@ -154,7 +177,7 @@
   cursor: pointer;
 }
 
-.btn-default-2:hover {
+ .btn-default-2:hover {
   background-color: var(--color-primary-3);
   transition: all 0.25s ease-in-out;
 }
@@ -194,6 +217,22 @@
   height: 15px; 
   filter: brightness(0) invert(1);
 }
+
+ /* -------------------- DARK MODE -------------------- */
+ .mobile-buttons .btn-default-1 {
+  background-color: transparent;
+  color: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-2);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.mobile-buttons .btn-default-1:hover {
+  background-color: var(--color-neutral-2);
+  color: var(--color-neutral-0);
+  transition: all 0.25s ease-in-out;
+}
+
 
   /* -------------------- MEDIA QUERY -------------------- */
 

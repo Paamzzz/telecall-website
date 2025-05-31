@@ -7,10 +7,33 @@
   --color-primary-5: #ffdfe3;
   --color-primary-6: #3656b6;
 
+  --color-shadow-1: #1e20226e;
+  --color-shadow-2: #a3bef4;
+
   --color-neutral-0: #fafafa;
   --color-neutral-1: #d1cece;
   --color-neutral-2: #111111;
   --color-neutral-3: #2b2a2a;
+  --color-neutral-4: #504f4f;
+  --color-neutral-5: #6c6c6c;
+
+}
+
+.darkmode {
+  --color-primary-1: #1941b7;
+  --color-primary-2: #930f1d;
+  --color-primary-3: #ce2536;
+  --color-primary-4: #17263b;
+  --color-primary-5: #ffdfe3;
+  --color-primary-6: #3656b6;
+
+  --color-shadow-1: #000000ed;
+  --color-shadow-2: #3656b64a;
+
+  --color-neutral-0: #111111;
+  --color-neutral-1: #2b2a2a;
+  --color-neutral-2: #fafafa;
+  --color-neutral-3: #d1cece;
   --color-neutral-4: #504f4f;
   --color-neutral-5: #6c6c6c;
 }
@@ -54,6 +77,7 @@ body {
   background-color: var(--color-neutral-0);
   padding: 0;
   margin: 0;
+  transition: ease 0.5s;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -88,12 +112,13 @@ body {
   padding-top: 5px;
   word-break: break-word;
   max-width: 90%;
+  color: var(--color-neutral-2);
   line-height: 1.2;
 }
 
 #hero p {
   font-size: clamp(14px, 1.4vw, 18px);
-  color: var(--color-neutral-5);
+  color: var(--color-neutral-3);
   padding-top: 10px;
   max-width: 600px;
   line-height: 1.6;
@@ -107,7 +132,7 @@ body {
   padding: 5px 28px;
   border-radius: 7px;
   background-color: var(--color-primary-2);
-  color: var(--color-neutral-0);
+  color: #fafafa;
   border: none;
   font-family: "Cabin", sans-serif;
   font-size: 16px;
@@ -227,6 +252,13 @@ body {
   }
 }
 
+.darkmode #logo-uber {
+  filter: invert(1);
+}
+
+.darkmode #logo-amazon {
+  filter: brightness(0) invert(100%);
+}
 /* -------------------- CPAAS SECTION -------------------- */
 #cpaas {
   width: 100%;
@@ -237,7 +269,7 @@ body {
 }
 
 #cpaas .container {
-  background-color: #e9f2ff;
+  background-color: var(--color-primary-4);
   padding-top: 100px;
   border-radius: 4vh;
 }
@@ -249,6 +281,7 @@ body {
   font-size: clamp(36px, 4vw, 46px);
   line-height: 1.2;
   margin-bottom: 40px;
+  color: var(--color-neutral-2)
 }
 
 #cpaas h3 {
@@ -257,6 +290,7 @@ body {
   font-size: clamp(22px, 2vw, 26px);
   line-height: 1.2;
   margin-bottom: 20px;
+  color: var(--color-neutral-2)
 }
 
 #cpaas p {
@@ -265,6 +299,7 @@ body {
   line-height: 1.6;
   margin-bottom: 70px;
   padding-right: 50px;
+  color: var(--color-neutral-3)
 }
 
 #cpaas .container img {
@@ -289,6 +324,7 @@ body {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
   font-size: clamp(36px, 4vw, 46px);
+  color: var(--color-neutral-2)
 }
 
 
@@ -314,11 +350,12 @@ body {
   display: flex;
   margin-top: 50px;
   transition: all 0.3s ease;
-  box-shadow:  22px 22px 42px #bababa;
+  background-color: var(--color-shadow-0);
+  box-shadow:  22px 22px 42px var(--color-shadow-1);
 }
 
 #solucoes .card:hover {
-  box-shadow:  10px 10px 45px rgb(163, 190, 244);
+  box-shadow:  10px 10px 45px var(--color-shadow-2);
   transition: all 0.2s ease;
 }
 
@@ -333,6 +370,7 @@ body {
   font-family: "Cabin", sans-serif;
   font-size: 23px;
   font-variation-settings: "wght" 500;
+  color: var(--color-neutral-2);
 }
 
 #solucoes img {
@@ -376,6 +414,7 @@ body {
   justify-content: center;
 }
 
+
 #planos .container {
   max-width: 1200px;
   margin-right: 20px;
@@ -392,11 +431,13 @@ body {
   background-attachment: center;
 }
 
+
+
 #planos h3 {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
   font-size: clamp(23px, 5vw, 28px);
-  color: var(--color-neutral-0);
+  color: #fafafa;
   text-align: center;
   padding-bottom: 5px;
 }
@@ -405,7 +446,7 @@ body {
   font-family: "Cabin", sans-serif;;
   font-size: clamp(13px, 2.5vw, 16px);
   max-width: 700px;
-  color: var(--color-neutral-0);
+  color: #fafafa;
   text-align: center;
 }
 
@@ -419,7 +460,7 @@ body {
   padding: 4px 30px;
   border-radius: 7px;
   background-color: var(--color-primary-1);
-  color: var(--color-neutral-0);
+  color: #fafafa;
   border: none;
   font-family: "Cabin", sans-serif;
   font-size: clamp(14px, 2.5vw, 16px);
@@ -434,7 +475,7 @@ body {
 #planos .btn-plan {
   padding: 10px 30px;
   border-radius: 7px;
-  background-color: var(--color-neutral-0);
+  background-color: #fafafa;
   color: var(--color-primary-2);
   border: none;
   font-family: "Cabin", sans-serif;
@@ -444,8 +485,8 @@ body {
 }
 
 #planos .btn-plan:hover {
-  background-color: var(--color-neutral-2);
-  color: var(--color-neutral-0);
+  background-color: #111111;
+  color: #fafafa;
 }
 
 
@@ -472,12 +513,20 @@ body {
   gap: 20px;
 }
 
+/* --color-neutral-0: #fafafa;
+--color-neutral-1: #d1cece;
+--color-neutral-2: #111111;
+--color-neutral-3: #2b2a2a;
+--color-neutral-4: #504f4f;
+--color-neutral-5: #6c6c6c; */
+
 #suporte h2 {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
   font-size: clamp(36px, 4vw, 46px);
   margin-bottom: 20px;
   display: block;
+  color: var(--color-neutral-2);
 }
 
 #suporte h3 {
@@ -494,8 +543,9 @@ body {
 
 #suporte label {
   font-size: clamp(15px, 2vw, 17px);
-  color: var(--color-neutral-3);
+  color: var(--color-neutral-);
   padding-top: 20px;
+  color: var(--color-neutral-3);
 }
 
 #suporte input {
@@ -513,7 +563,7 @@ body {
   padding: 7px 50px;
   border-radius: 7px;
   background-color: var(--color-primary-2);
-  color: var(--color-neutral-0);
+  color: #fafafa;
   border: none;
   font-size: clamp(14px, 2vw, 16px);
   text-decoration: none;
@@ -528,7 +578,7 @@ body {
 
 #suporte p {
   font-size: clamp(14px, 2vw, 16px);
-  color: var(--color-neutral-4);
+  color: var(--color-neutral-3);
   margin-top: 20px;
 }
 
@@ -548,7 +598,7 @@ body {
 
 
 #suporte span{
-  color: var(--color-neutral-4);
+  color: var(--color-neutral-3);
   font-size: clamp(14px, 2vw, 16px);
 }
 
@@ -559,11 +609,12 @@ body {
 #suporte h4 {
   font-size: clamp(18px, 2vw, 22px);
   margin-left: 20px;
+  color: var(--color-neutral-2);
 }
 
 #suporte .location-info p {
   font-size: clamp(14px, 2vw, 16px);
-  color: var(--color-neutral-4);
+  color: var(--color-neutral-3);
   margin-left: 30px;
 }
 

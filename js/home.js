@@ -1,10 +1,40 @@
 /* ========================================
-   Inicialização (entry point)
-   ======================================== */
-
-/* ========================================
    Dark Mode
    ======================================== */
+
+let darkmode = localStorage.getItem('darkmode');
+const darkModeToggle = document.getElementById('darkmode-toggle');
+const darkModeIcon = document.getElementById('darkmode-icon')
+
+const enableDarkMode = () => {
+  document.body.classList.add('darkmode');
+  localStorage.setItem('darkmode', 'enabled');
+  darkModeIcon.src = 'assets/icons/icon-claro.svg'; // Atualiza o ícone para o sol
+}
+const disableDarkMode = () => {
+  document.body.classList.remove('darkmode')
+  localStorage.setItem('darkmode', null);
+  darkModeIcon.src = 'assets/icons/icon-escuro.svg'; // Atualiza o ícone para a lua
+}
+
+
+if (darkmode === 'enabled') {
+  enableDarkMode();
+}
+else {
+  disableDarkMode();
+} 
+
+darkModeToggle.addEventListener('click', () => {
+  // Aqui está a correção: atualizar a variável com o novo valor
+  darkmode = localStorage.getItem('darkmode');
+
+  if (darkmode !== 'enabled') {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
 
 /* ========================================
    Botões de Aumentar/Diminuir Fonte
