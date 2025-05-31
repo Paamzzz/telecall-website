@@ -2,9 +2,9 @@
 
 
 ## 📋 Atualizações
-### Versão 3.6.5
-- Darkmode feito
-- Correções no readme
+### Versão 3.7.6
+- Footer não é mais afetado pelo modo escuro
+- add "title" em botões desativados
 <br> <br>
 
 ## 📖 Descrição

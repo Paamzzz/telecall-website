@@ -79,7 +79,7 @@ footer{
 
 .wrapper .footer-widget p {
   font-size: 15px;
-  color: var(--color-neutral-0);
+  color: #fafafa;
   margin-bottom: 50px;
 
 }
@@ -108,7 +108,7 @@ footer{
 }
 
 .wrapper .footer-widget h6{
-  color: var(--color-neutral-0);
+  color: #fafafa;
   font-family: "Cabin", sans-serif;
   font-weight: 540;
   margin-bottom: 30px;
@@ -126,14 +126,14 @@ footer{
 }
 
 .wrapper .footer-widget .links li a{
-  color: var(--color-neutral-1);
+  color: #d1cece;
   font-size: 14px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .wrapper .footer-widget .links li a:hover {
-  color: var(--color-neutral-0);
+  color: #fafafa;
 
 }
 
@@ -146,17 +146,17 @@ footer{
 }
 
 .copyright-wrapper p {
-  color: var(--color-neutral-1);
+  color: #d1cece;
   text-align: center;
 }
 
 .copyright-wrapper a {
-  color: var(--color-neutral-1);
+  color: #d1cece;
   text-decoration: none;
 }
 
 .copyright-wrapper a:hover {
-  color: var(--color-neutral-0);
+  color: #fafafa;
   text-decoration: underline;
   text-decoration: none;
   transition: all 0.3s ease;  
