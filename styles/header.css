@@ -138,6 +138,10 @@
 .dropdown-item {
   font-size: var(--fs-xs);
   font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover {
+  background-color: var(--color-neutral-1);
 }
 
 .dropdown-menu {
@@ -149,6 +153,10 @@
 .dropdown-menu a {
   color: var(--color-neutral-3);
   padding: 8px 16px;
+}
+
+.user-area-desktop .dropdown-toggle::after {
+  color: var(--color-primary-4);
 }
 /* -------------------- BUTTONS -------------------- */
 .btn-default-1 {
@@ -225,6 +233,77 @@
   filter: brightness(0) invert(1);
 }
 
+/* -------------------- USER AREA -------------------- */
+.user-area-desktop, 
+.user-area-mobile {
+  padding-right: 2%;
+  padding-left: 0.5%;
+  text-decoration: none;
+}
+
+.exit-icon {
+  width: 20px;
+  height: auto;
+  color: var(--color-neutral-3);
+}
+
+.logout-text {
+  color: var(--color-neutral-3);
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.user-area-desktop li,
+.user-area-mobile li {
+  list-style: none;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+ .nav-link .username{
+  color: #fafafa;
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+/* Desktop user area */
+  .user-area-desktop .nav-link .username{
+  color: #fafafa;
+}
+
+.user-area-desktop .nav-link::before {
+  bottom: -2px; 
+  left: 55%;
+}
+
+.user-area-desktop .dropdown-toggle::after {
+  color: #fafafa;
+}
+
+.user-area-desktop .profile-icon {
+  color: #fafafa;
+  background-color: #6f81b0;
+}
+
+/* Mobile user area */
+.user-area-mobile span{
+  color: var(--color-neutral-2);
+}
+
+.user-area-mobile .nav-link .username {
+  color: var(--color-neutral-2);
+} 
+
+.user-area-mobile .profile-icon {
+  color: var(--color-neutral-0);
+  background-color: #6f81b0;
+}
  /* -------------------- DARK MODE -------------------- */
  .mobile-buttons .btn-default-1 {
   background-color: transparent;
@@ -331,6 +410,7 @@
     padding: 2px 10px;
     margin: 0px 10px;
   }
+
 }
 
 @media (min-width: 603px) {
@@ -339,12 +419,26 @@
   }
 }
 
+  /* Home-logado */
+  .user-area-mobile  {
+    display: none;
+  }
+
 @media (max-width: 602px) {
   .desktop-buttons {
     display: none;
   }
   .mobile-buttons {
     display: block
+  }
+
+  /* Home-logado */
+  .user-area-desktop {
+    display: none;
+  }
+
+  .user-area-mobile {
+    display: block;
   }
 
   .btn-default-2 {
