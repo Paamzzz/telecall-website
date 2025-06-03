@@ -2,8 +2,9 @@
 
 
 ## 📋 Atualizações
-### Versão 3.7.7
-- Bugs corrigidos na responsividade
+### Versão 3.8.7
+- Popup feito e com js completo
+- Apenas falta o LocalStorage para o nome e lembrar que o usuário já fez login
 <br> <br>
 
 ## 📖 Descrição

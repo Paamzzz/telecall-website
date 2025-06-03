@@ -136,16 +136,21 @@ body {
   z-index: 1000;
   backdrop-filter: blur(5px);
   transition: opacity 0.3s ease;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup-content {
   background: var(--color-neutral-0);
-  padding: 50px;
+  max-width: 700px;
+  padding: 50px 100px;
+  margin: 300px auto;
   border-radius: 10px;
 }
 
 .popup-content p {
   font-family: "LibreFranklin", sans-serif;
+  text-align: center;
   font-size: var(--fs-lg);
   color: var(--color-neutral-2);
   margin-bottom: 20px;

@@ -2,28 +2,28 @@
    Popup
    ======================================== */
 
-   const logoutButtons = document.querySelectorAll(".logout-button");
-   const popup = document.getElementById("logout-popup");
-   const confirmLogout = document.getElementById("confirm-logout");
-   const cancelLogout = document.getElementById("cancel-logout");
-   
-   /// Adiciona evento a todos os botões "Sair"
-logoutButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    popup.classList.remove("hidden");
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutButtons = document.querySelectorAll(".logout-button");
+  const popup = document.getElementById("logout-popup");
+  const confirmLogout = document.getElementById("confirm-logout");
+  const cancelLogout = document.getElementById("cancel-logout");
+
+  logoutButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      popup.classList.remove("hidden");
+    });
+  });
+
+  cancelLogout.addEventListener("click", () => {
+    popup.classList.add("hidden");
+  });
+
+  confirmLogout.addEventListener("click", () => {
+    localStorage.removeItem("usuarioLogado");
+    window.location.href = "index.html";
   });
 });
 
-// Cancelar logout
-cancelLogout.addEventListener("click", () => {
-  popup.classList.add("hidden");
-});
-
-// Confirmar logout
-confirmLogout.addEventListener("click", () => {
-  localStorage.removeItem("usuarioLogado");
-  window.location.href = "index.html";
-});
 /* ========================================
    Scroll Animation
    ======================================== */
@@ -163,12 +163,12 @@ document.addEventListener("DOMContentLoaded", function () {
    const enableDarkMode = () => {
      document.body.classList.add("darkmode");
      localStorage.setItem("darkmode", "enabled");
-     darkModeIcon.src = "assets/icons/icon-claro.svg";
+     darkModeIcon.src = "../assets/icons/icon-claro.svg";
    };
    const disableDarkMode = () => {
      document.body.classList.remove("darkmode");
      localStorage.setItem("darkmode", null);
-     darkModeIcon.src = "assets/icons/icon-escuro.svg";
+     darkModeIcon.src = "../assets/icons/icon-escuro.svg";
    };
    
    if (darkmode === "enabled") {
