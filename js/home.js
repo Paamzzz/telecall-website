@@ -85,8 +85,16 @@ ScrollReveal().reveal("#suporte .title", {
   interval: 300,
 });
 
-ScrollReveal().reveal("#suporte .row", {
-  origin: "bottom",
+ScrollReveal().reveal(".left-suporte", {
+  origin: "left",
+  duration: 900,
+  distance: "100px",
+  delay: 900,
+  interval: 300,
+});
+
+ScrollReveal().reveal(".right-suporte", {
+  origin: "right",
   duration: 900,
   distance: "100px",
   delay: 900,

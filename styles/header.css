@@ -344,6 +344,21 @@
     }
    
   }
+  @media (max-width: 1087px) {
+    .btn-default-2,
+    .btn-default-1 {
+      padding: 6px 8px;
+    }
+
+    .btn-default-1 {
+      margin-left: 10px;
+    }
+   
+    .ui-tools {
+      margin-right: 0;
+      gap: 5px;
+    }
+  }
 
 @media (max-width: 991px) {
 
