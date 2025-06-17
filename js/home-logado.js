@@ -1,3 +1,29 @@
+/* =====================================================================
+                              
+                            Autor original: Pamela
+    
+   =====================================================================  */
+
+/* ========================================
+   Nome do Usuário
+   ======================================== */
+
+ document.addEventListener("DOMContentLoaded", function () {
+  const nomeUsuario = localStorage.getItem("usuarioLogado");
+  console.log("Usuário logado:", nomeUsuario);
+
+  const spansUsername = document.querySelectorAll(".username");
+  console.log("Spans encontrados:", spansUsername);
+
+  if (nomeUsuario && spansUsername.length > 0) {
+    spansUsername.forEach(span => {
+      span.textContent = nomeUsuario;
+    });
+  } else {
+    console.log("Usuário não logado ou elementos não encontrados.");
+  }
+});
+
 /* ========================================
    Popup
    ======================================== */
@@ -20,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   confirmLogout.addEventListener("click", () => {
     localStorage.removeItem("usuarioLogado");
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   });
 });
 
@@ -133,39 +159,6 @@ ScrollReveal().reveal(".right-suporte", {
   distance: "100px",
   delay: 900,
   interval: 300,
-});
-
-/* ========================================
-    Scrollpy
-   ======================================== */
-
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  function activateNavLinkOnScroll() {
-    let currentSection = "";
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-
-      if (window.scrollY >= sectionTop - 100) {
-        currentSection = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", activateNavLinkOnScroll);
-  activateNavLinkOnScroll();
 });
 
 /* ========================================

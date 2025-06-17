@@ -2,9 +2,11 @@
 
 
 ## 📋 Atualizações
-### Versão 3.8.7
-- Popup feito e com js completo
-- Apenas falta o LocalStorage para o nome e lembrar que o usuário já fez login
+### Versão 4.8.7
+- Finalizado todas as páginas
+- Consertado erros nas telas de "Login", "Cadastro"e "Solucoes"(html, css e js)
+- Ligação com todas as telas está em perfeito estado
+- LocalStorage completo
 <br> <br>
 
 ## 📖 Descrição
@@ -14,6 +16,7 @@
 ## 🚀 Funcionalidades
 
 - Página inicial e subpáginas de soluções com rolagem para apresentar os serviços oferecidos pela Telecall.
+- Tela "Soluções", Cadastro e Login
 - Tela pós-login com cache para salvar o nome do usuário e o estado de login.
 - Modo escuro para uma melhor experiência visual.
 - Botões para aumentar e diminuir o tamanho da fonte, proporcionando acessibilidade ao usuário.
@@ -33,12 +36,28 @@ This project is licensed under the MIT License.
 See the [LICENSE](./LICENSE) file for more information.
  <br> <br>
 
-## 👩‍💻 Author
+## 👩‍💻 Authors
+
+**Carolina Rodrigues dos Santos**  
+🌐 [GitHub](https://github.com/Carolis777) 
+<br> <br>
+
+**Juan de Andrade**  
+🌐 [GitHub](https://github.com/Juan-de-andrade) 
+<br> <br>
 
 **Pamela Amancio Goulart**  
-Full-Stack Developer & Design Student  
 📧 pamamanciogoulart@gmail.com  
 🌐 [GitHub](https://github.com/Paamzzz) 
+<br> <br>
+
+**Renan Oliveira Mello**  
+<br> <br>
+
+**Washington Teles Oliveira da Silva**  
+<br> <br>
+
+
 
 
 
