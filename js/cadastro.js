@@ -58,6 +58,7 @@ let password = document.getElementById("password").value;
 let confirmpassword = document.getElementById("confirmpassword").value;
 let icon1 = document.getElementById("icon1");
 let icon2 = document.getElementById("icon2");
+let erroLogin = document.getElementById("erroLogin");
 
 function formatarTelefone(input) {
   var telefone = input.value.replace(/\D/g, "");
@@ -98,6 +99,60 @@ function verOcultarSenha2() {
     icon2.src = "../assets/icons/hide.png";
   }
 }
+
+function validarLogin() {
+  const loginInput = document.getElementById("login"); 
+  const erroLogin = document.getElementById("erro-login");
+  const valor = loginInput.value; 
+
+  const regex = /^[A-Za-z]{6}$/;
+
+  if (valor.length === 0) {
+    erroLogin.textContent = ""; // limpa a mensagem, não mostra erro se estiver vazio
+  } else if (!regex.test(valor)) {
+    erroLogin.textContent = "O login deve conter exatamente 6 letras (sem números ou símbolos)";
+  } else {
+    erroLogin.textContent = ""; // está tudo certo, limpa a mensagem
+  }
+}
+
+function validarSenha() {
+  const senhaInput = document.getElementById("password");
+  const erroSenha = document.getElementById("erro-senha");
+  const valor = senhaInput.value; 
+
+  const regex = /^[A-Za-z]{8}$/;
+
+  if (valor.length === 0) {
+    erroSenha.textContent = "";
+  } else if (!regex.test(valor)) {
+    erroSenha.textContent = "A senha deve conter exatamente 8 letras";
+   } else {
+      erroSenha.textContent = "";
+    }
+ }
+
+function validarConfirmSenha() {
+  const confirmSenhaInput = document.getElementById("confirmpassword");
+  const erroSenha = document.getElementById("erro-confirma");
+  const valor = confirmSenhaInput.value; 
+
+  const regex = /^[A-Za-z]{8}$/;
+
+  if (valor.length === 0) {
+    erroSenha.textContent = "";
+  } else if (!regex.test(valor)) {
+    erroSenha.textContent = "A senha deve conter exatamente 8 letras";
+   } else {
+      erroSenha.textContent = "";
+    }
+ }
+
+ document.getElementById("login").addEventListener("input", validarLogin);
+ document.getElementById("password").addEventListener("input", validarSenha);
+ document.getElementById("confirmpassword").addEventListener("input", validarConfirmSenha);
+ 
+
 
 function senha(validar) {
   const errorspan1 = inputbox4.queryselector(".error");
@@ -166,9 +221,19 @@ document.getElementById("form").addEventListener("submit", function (event) {
     return;
   }
 
-  // Validação de e-mail simples
-  if (!login.includes("@") || !login.includes(".")) {
-    alert("Digite um e-mail válido.");
+  // Validação de login simples
+  if (login.length < 6 || !/^[A-Za-z]+$/.test(login)) {
+    alert("Digite um login válido.");
+    event.preventDefault();
+    return;
+  }
+
+  // Caso a senha e o login estejam errados, exibe mensagem de erro
+  if (
+    (login.length < 6 || !/^[A-Za-z]+$/.test(login)) && 
+    (password.length < 8 || !/^[A-Za-z]+$/.test(password))
+   ) {
+    alert("Senha e Login inválidos.");
     event.preventDefault();
     return;
   }

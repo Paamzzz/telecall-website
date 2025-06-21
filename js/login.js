@@ -15,10 +15,11 @@
    ======================================== */
 
    ScrollReveal().reveal("#login-title", {
-     origin: "bottom",
-     duration: 900,
-     distance: "50px",
-     delay: 800,
+    origin: "bottom",
+    duration: 900,
+    distance: "100px",
+    scale: 1.5,
+    delay: 700,
    });
 
    ScrollReveal().reveal("#login-description", {
@@ -111,10 +112,10 @@
    document.addEventListener("DOMContentLoaded", function () {
     const togglePassword = document.getElementById("togglePassword");
     const password = document.getElementById("password");
-    const email = document.getElementById("email");
+    const login = document.getElementById("login");
     const form = document.getElementById("form");
   
-    if (!form || !email || !password) return; // Proteção extra
+    if (!form || !login || !password) return; // Proteção extra
   
     // Alternar visibilidade da senha
     togglePassword?.addEventListener("click", function () {
@@ -144,17 +145,17 @@
       const oldError = document.getElementById("login-error");
       if (oldError) oldError.remove();
   
-      const loginEmail = email.value.trim();
+      const loginValue = login.value.trim();
       const loginPassword = password.value.trim();
   
-      if (!loginEmail || !loginPassword) {
+      if (!loginValue || !loginPassword) {
         showError("Preencha todos os campos.");
         return;
       }
   
-      const userData = localStorage.getItem(loginEmail);
+      const userData = localStorage.getItem(loginValue);
       if (!userData) {
-        showError("Email não cadastrado.");
+        showError("Login não cadastrado.");
         return;
       }
   

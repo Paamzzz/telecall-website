@@ -430,8 +430,19 @@ select {
   z-index: 2;
 }
 
+
+/* -------------------- SPAN DE ERRO-------------------- */
+
+.error {
+  color: var(--color-primary-3);
+  font-size: var(--fs-xs);
+  text-align: center;
+  margin: 10px;
+  min-height: 1.2em;
+}
+
 /* -------------------- MEDIA QUERY-------------------- */
-@media (max-width: 600px) {
+@media (max-width: 738px) {
   .container {
     width: 98vw;
     min-width: unset;
