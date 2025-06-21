@@ -145,6 +145,7 @@ body {
 #hero span {
   font-size: var(--fs-xs);
   color: var(--color-neutral-5);
+  transition: ease 0.3s;
 }
 
 #hero h1 {
@@ -156,6 +157,7 @@ body {
   max-width: 90%;
   color: var(--color-neutral-2);
   line-height: 1.2;
+  transition: ease 0.3s;
 }
 
 #hero p {
@@ -164,6 +166,7 @@ body {
   padding-top: 10px;
   max-width: 600px;
   line-height: 1.6;
+  transition: ease 0.3s;
 }
 
 .hero-buttons {
@@ -237,11 +240,13 @@ body {
 #carrousel:after {
   left: 0;
   background: linear-gradient(to left , rgba(245, 249, 246, 0), var(--color-neutral-0)); 
+  transition: ease 0.3s;
 }
 
 #carrousel:before {
   right: 0;
   background: linear-gradient(to right , rgba(245, 249, 246, 0), var(--color-neutral-0)); 
+  transition: ease 0.3s;
 }
 
 .empresas {
@@ -254,6 +259,7 @@ body {
   font-size: var(--fs-md);
   color: var(--color-neutral-5);
   padding: 15px;
+  transition: ease 0.3s;
 }
 
 .wrapper {
@@ -295,10 +301,12 @@ body {
 
 .darkmode #logo-uber {
   filter: invert(1);
+  transition: ease 0.3s;
 }
 
 .darkmode #logo-amazon {
   filter: brightness(0) invert(100%);
+  transition: ease 0.3s;
 }
 /* -------------------- CPAAS SECTION -------------------- */
 #cpaas {
@@ -313,6 +321,7 @@ body {
   background-color: var(--color-primary-4);
   padding-top: 100px;
   border-radius: 4vh;
+  transition: ease 0.3s;
 }
 
 #cpaas h2 {
@@ -322,7 +331,8 @@ body {
   font-size: var(--fs-xl);
   line-height: 1.2;
   margin-bottom: 40px;
-  color: var(--color-neutral-2)
+  color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 #cpaas h3 {
@@ -331,7 +341,8 @@ body {
   font-size: var(--fs-lg);
   line-height: 1.2;
   margin-bottom: 20px;
-  color: var(--color-neutral-2)
+  color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 #cpaas p {
@@ -340,7 +351,8 @@ body {
   line-height: 1.6;
   margin-bottom: 70px;
   padding-right: 50px;
-  color: var(--color-neutral-3)
+  color: var(--color-neutral-3);
+  transition: ease 0.3s;
 }
 
 #cpaas .container img {
@@ -365,7 +377,8 @@ body {
   font-family: "LibreFranklin", sans-serif;
   font-variation-settings: "wght" 600;
   font-size: var(--fs-xl);
-  color: var(--color-neutral-2)
+  color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 
@@ -374,6 +387,7 @@ body {
   color: var(--color-neutral-3);
   font-size: var(--fs-sm);
   font-variation-settings: "wght" 400;
+  transition: ease 0.3s;
 }
 
 #solucoes .card-wrapper {
@@ -412,6 +426,7 @@ body {
   font-size: var(--fs-lg);
   font-variation-settings: "wght" 500;
   color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 #solucoes img {
@@ -430,6 +445,7 @@ body {
   font-size: var(--fs-sm);
   padding-left: 30px;
   font-variation-settings: "wght" 400;
+  transition: ease 0.3s;
 }
 
 #solucoes .solutions-link a , #solucoes .solutions-link span {
@@ -438,6 +454,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: var(--fs-sm);
+  transition: ease 0.3s;
 }
 
 #solucoes .solutions-link a:hover {
@@ -471,6 +488,7 @@ body {
   background-image: url("../assets/img/bg-red.png");
   background-size: cover;
   background-attachment: center;
+  transition: ease 0.3s;
 }
 
 
@@ -482,6 +500,7 @@ body {
   color: #fafafa;
   text-align: center;
   padding-bottom: 5px;
+  transition: ease 0.3s;
 }
 
 #planos p {
@@ -490,6 +509,7 @@ body {
   max-width: 700px;
   color: #fafafa;
   text-align: center;
+  transition: ease 0.3s;
 }
 
 #planos .group-buttons {
@@ -562,6 +582,7 @@ body {
   margin-bottom: 20px;
   display: block;
   color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 #suporte h3 {
@@ -570,6 +591,7 @@ body {
   margin-top: 25px;
   margin-bottom: 20px;
   color: var(--color-primary-1);
+  transition: ease 0.3s;
 }
 
 #suporte #title-contato {
@@ -581,6 +603,7 @@ body {
   color: var(--color-neutral-);
   padding-top: 20px;
   color: var(--color-neutral-3);
+  transition: ease 0.3s;
 }
 
 #suporte input {
@@ -590,6 +613,7 @@ body {
   font-size: var(--fs-sm);
   background-color: var(--color-neutral-0);
   border: 1px solid var(--color-neutral-1);
+  transition: ease 0.3s;
 }
 
 #suporte #fmensagem {
@@ -617,6 +641,7 @@ body {
   font-size: var(--fs-sm);
   color: var(--color-neutral-3);
   margin-top: 20px;
+  transition: ease 0.3s;
 }
 
 #suporte .info-area {
@@ -631,29 +656,34 @@ body {
   background-color: var(--color-primary-3);
   border-radius: 50%;
   margin-right: 5px;
+  transition: ease 0.3s;
 }
 
 
 #suporte span{
   color: var(--color-neutral-3);
   font-size: var(--fs-sm);
+  transition: ease 0.3s;
 }
 
 #suporte .location-info h3 {
   margin-bottom: 10px;
   font-size: var(--fs-lg);
+  transition: ease 0.3s;
 }
 
 #suporte h4 {
   font-size: var(--fs-md);
   margin-left: 20px;
   color: var(--color-neutral-2);
+  transition: ease 0.3s;
 }
 
 #suporte .location-info p {
   font-size: var(--fs-sm);
   color: var(--color-neutral-3);
   margin-left: 30px;
+  transition: ease 0.3s;
 }
 
 /* -------------------- MEDIA QUERY -------------------- */

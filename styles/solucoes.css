@@ -457,6 +457,7 @@ body {
   border-radius: 50px;
   color: #222;
   margin-bottom: 150px;
+  transition: ease 0.3s;
 }
 
 #sms-programavel .conteudo-principal {

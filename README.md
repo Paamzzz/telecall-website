@@ -28,6 +28,7 @@
 - JavaScript
 - Boostrap
 - Figma
+- ScrollReveal library
  <br> <br>
 
 ## 📝 License
@@ -55,7 +56,7 @@ See the [LICENSE](./LICENSE) file for more information.
 <br> <br>
 
 **Washington Teles Oliveira da Silva**  
-<!-- 🌐 [GitHub](https://github.com/oscar)  -->
+🌐 [GitHub](https://github.com/Washington-teles)
 <br> <br>
 
 
