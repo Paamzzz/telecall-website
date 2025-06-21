@@ -16,19 +16,28 @@
 
    ScrollReveal().reveal("#login-title", {
     origin: "bottom",
-    duration: 900,
-    distance: "100px",
-    scale: 1.5,
-    delay: 700,
+    duration: 500,
+    distance: "50px",
+    easing: "ease",
+    delay: 400,
+    reset: true,
    });
 
    ScrollReveal().reveal("#login-description", {
      origin: "bottom",
      duration: 900,
      distance: "50px",
-     delay: 500,
+     delay: 900,
+     reset: true,
    });
    
+   ScrollReveal().reveal("#form",{ 
+    origin: "bottom",
+    duration: 800,
+    distance: "50px",
+    easing: "ease",
+    delay: 1300,
+   });
 
 
 /* ========================================

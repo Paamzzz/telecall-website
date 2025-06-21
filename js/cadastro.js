@@ -21,6 +21,7 @@
     distance: "50px",
     easing: "ease",
     delay: 400,
+    
   });
 
    ScrollReveal().reveal("span", {
@@ -28,7 +29,7 @@
     duration: 500,
     distance: "50px",
     easing: "ease",
-    delay: 800,
+    delay: 900,
   });
 
    ScrollReveal().reveal(".input-group", {
