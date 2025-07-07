@@ -188,7 +188,7 @@ body {
 /* -------------------- FUNDO AZUL -------------------- */
 
 #fundo-azul {
-  background-image: url('/assets/img/fundo-azul.png');
+  background-image: url('../assets/img/fundo-azul.png');
   background-size: cover;
   background-position: center;
   text-align: center;

@@ -2,11 +2,8 @@
 
 
 ## 📋 Atualizações
-### Versão 4.8.7
-- Finalizado todas as páginas
-- Consertado erros nas telas de "Login", "Cadastro"e "Solucoes"(html, css e js)
-- Ligação com todas as telas está em perfeito estado
-- LocalStorage completo
+### Versão 4.8.8
+- Correções de link
 <br> <br>
 
 ## 📖 Descrição
